@@ -4,8 +4,9 @@ const {
   loginUser,
   getUserInfo,
 } = require("../controllers/authController");
-const { protect } = require("../middleware/authMiddleware");
-const upload = require("../middleware/uploadMiddleware");
+import { protect } from "../middleware/authMiddleware.js";
+import upload from "../middleware/uploadMiddleware.js";
+
 
 const router = express.Router();
 
