@@ -1,11 +1,13 @@
 import express from "express";
-const {
+import {
   addExpense,
   getAllExpenses,
   deleteExpense,
   downloadExpenseExcel,
-} = require("../controllers/expenseController");
-const { protect } = require("../middleware/authMiddleware");
+} from "../controllers/expenseController.js";
+
+import { protect } from "../middleware/authMiddleware.js";
+
 
 const router = express.Router();
 

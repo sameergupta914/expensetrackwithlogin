@@ -1,9 +1,5 @@
 import express from "express";
-const {
-  registerUser,
-  loginUser,
-  getUserInfo,
-} = require("../controllers/authController");
+import { registerUser, loginUser, getUserInfo } from "../controllers/authController.js";
 import { protect } from "../middleware/authMiddleware.js";
 import upload from "../middleware/uploadMiddleware.js";
 
