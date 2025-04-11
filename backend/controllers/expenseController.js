@@ -2,7 +2,7 @@ import xlsx from "xlsx";
 import Expense from "../models/Expense.js";
 
 // Add Expense
-exports.addExpense = async (req, res) => {
+export const addExpense = async (req, res) => {
   const userId = req.user.id;
 
   try {

@@ -6,7 +6,7 @@ const { isValidObjectId, Types } = mongoose;
 
 
 // Add Expense
-exports.getDashboardData = async (req, res) => {
+export const getDashboardData = async (req, res) => {
   try {
     const userId = req.user.id;
     const userObjectId = new Types.ObjectId(String(userId));

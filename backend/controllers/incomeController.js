@@ -3,7 +3,7 @@ import Income from "../models/Income.js";
 
 
 // Add Income
-exports.addIncome = async (req, res) => {
+export const addIncome = async (req, res) => {
   const userId = req.user.id;
 
   try {
@@ -30,7 +30,7 @@ exports.addIncome = async (req, res) => {
 };
 
 // Get All Income (For Logged-in User)
-exports.getAllIncome = async (req, res) => {
+export const getAllIncome = async (req, res) => {
   const userId = req.user.id;
 
   try {
@@ -42,7 +42,7 @@ exports.getAllIncome = async (req, res) => {
 };
 
 // Delete Income
-exports.deleteIncome = async (req, res) => {
+export const deleteIncome = async (req, res) => {
   const userId = req.user.id;
 
   try {
@@ -54,7 +54,7 @@ exports.deleteIncome = async (req, res) => {
 };
 
 // Download Income Details in Excel
-exports.downloadIncomeExcel = async (req, res) => {
+export const downloadIncomeExcel = async (req, res) => {
   const userId = req.user.id;
   try {
     const income = await Income.find({ userId }).sort({ date: -1 });
