@@ -1,6 +1,7 @@
-const express = require("express");
-const { protect } = require("../middleware/authMiddleware");
-const { getDashboardData } = require("../controllers/dashboardController");
+import express from "express";
+import { protect } from "../middleware/authMiddleware.js";
+import { getDashboardData } from "../controllers/dashboardController.js";
+
 
 const router = express.Router();
 

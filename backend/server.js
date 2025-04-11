@@ -1,13 +1,14 @@
 import dotenv from 'dotenv';
 dotenv.config();
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-const connectDB = require("./config/db");
-const authRoutes = require("./routes/authRoutes");
-const incomeRoutes = require("./routes/incomeRoutes");
-const expenseRoutes = require("./routes/expenseRoutes");
-const dashboardRoutes = require("./routes/dashboardRoutes");
+import express from "express";
+import cors from "cors";
+import path from "path";
+import connectDB from "./config/db.js";
+import authRoutes from "./routes/authRoutes.js";
+import incomeRoutes from "./routes/incomeRoutes.js";
+import expenseRoutes from "./routes/expenseRoutes.js";
+import dashboardRoutes from "./routes/dashboardRoutes.js";
+
 
 const app = express();
 const __dirname=path.resolve();

@@ -1,5 +1,5 @@
-const User = require("../models/User");
-const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken";
+import User from "../models/User.js";
 
 // Generate JWT token
 const generateToken = (id) => {
